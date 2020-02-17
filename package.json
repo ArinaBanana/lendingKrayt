@@ -5,15 +5,18 @@
   "type": "module",
   "main": "index.js",
   "scripts": {
-    "build": "gulp",
-    "lint": "stylelint **/*.scss"
+    "build": "gulp build",
+    "lint": "gulp autolint"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "del": "^5.1.0",
     "gulp": "^4.0.2",
     "gulp-cli": "^2.2.0",
+    "gulp-rename": "^2.0.0",
     "gulp-sass": "^4.0.2",
+    "gulp-stylelint": "^13.0.0",
     "node-sass": "^4.13.1",
     "stylelint": "^13.1.0",
     "stylelint-config-standard": "^20.0.0"
