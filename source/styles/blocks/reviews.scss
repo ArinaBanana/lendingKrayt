@@ -1,0 +1,19 @@
+.reviews__title {
+  @include none-indentation;
+}
+
+.reviews__list {
+  @include list-reset;
+}
+
+.reviews__comment {
+  @include none-indentation;
+}
+
+.reviews__name {
+  @include none-indentation;
+}
+
+.reviews__company {
+  @include none-indentation;
+}

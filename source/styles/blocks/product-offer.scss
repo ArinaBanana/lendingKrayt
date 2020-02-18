@@ -1,0 +1,7 @@
+.product-offer__title {
+  @include none-indentation;
+}
+
+.product-offer__list {
+  @include list-reset;
+}

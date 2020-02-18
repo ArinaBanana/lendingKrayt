@@ -1,0 +1,11 @@
+.social__list {
+  @include list-reset;
+}
+
+.social__link {
+  text-decoration: none;
+}
+
+.social__copyright {
+  @include none-indentation;
+}

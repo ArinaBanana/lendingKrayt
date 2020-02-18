@@ -1,0 +1,11 @@
+.banner__title {
+  @include none-indentation;
+}
+
+.banner__content {
+  @include none-indentation;
+}
+
+.banner__btn {
+  text-decoration: none;
+}

@@ -1,0 +1,11 @@
+.advantage__list {
+  @include list-reset;
+}
+
+.advantage__title {
+  @include none-indentation;
+}
+
+.advantage__description {
+  @include none-indentation;
+}

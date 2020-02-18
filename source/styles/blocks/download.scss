@@ -1,0 +1,11 @@
+.download__stores {
+  @include list-reset;
+}
+
+.download__store {
+  @include none-indentation;
+}
+
+.download__link {
+  text-decoration: none;
+}
