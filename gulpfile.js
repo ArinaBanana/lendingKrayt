@@ -26,8 +26,9 @@ var clean = function () {
     return del("build");
 };
 
-var reloadServer = function () {
-   return server.reload();
+var reloadServer = function (cb) {
+    server.reload();
+    cb();
 };
 
 var runServer = function () {
@@ -43,13 +44,28 @@ var runServer = function () {
     gulp.watch("source/*.html", gulp.series(processHtml, reloadServer));
 };
 
-var processDependencies = function () {
-    return gulp.src([
-        "node_modules/normalize.css/normalize.css"
-    ])
-        .pipe(rename("normalize.min.css"))
-        .pipe(gulp.dest("build/css"))
+var processImg = function () {
+    return gulp.src(["source/img/**"], {
+        base: "source"
+    })
+        .pipe(gulp.dest("build"))
 };
+
+var processDependenciesCss = function () {
+    return gulp.src([
+        "node_modules/normalize.css/normalize.css",
+        "node_modules/font-awesome/css/font-awesome.css"
+    ])
+        .pipe(rename({suffix: ".min"}))
+        .pipe(gulp.dest("build/css"));
+};
+
+var processDependenciesFonts = function () {
+    return gulp.src(["node_modules/font-awesome/fonts/*"])
+        .pipe(gulp.dest("build/fonts"))
+};
+
+var processDependencies = gulp.parallel(processDependenciesCss, processDependenciesFonts);
 
 var processSass = function () {
     return gulp.src("source/styles/main.scss")
@@ -70,7 +86,7 @@ var processHtml = function () {
         .pipe(gulp.dest("build"))
 };
 
-var build = gulp.series(clean, gulp.parallel(processDependencies, processSass), processHtml);
+var build = gulp.series(clean, processImg, gulp.parallel(processDependencies, processSass), processHtml);
 
 exports.build = build;
 exports.start = gulp.series(build, runServer);
