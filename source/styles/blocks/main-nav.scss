@@ -1,0 +1,11 @@
+.main-header {
+  @include fixed-container;
+}
+
+.main-nav__list {
+  @include list-reset;
+}
+
+.main-nav__link {
+  text-decoration: none;
+}
