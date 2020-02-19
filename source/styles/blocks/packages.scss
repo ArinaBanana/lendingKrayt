@@ -1,3 +1,7 @@
+.packages {
+  display: flex;
+}
+
 .packages__prop {
   @include none-indentation;
 }

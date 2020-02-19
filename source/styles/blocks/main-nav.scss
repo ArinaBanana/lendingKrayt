@@ -1,15 +1,17 @@
-.main-header {
-  @include fixed-container;
+.main-nav {
+  width: 45%;
 }
 
 .main-nav__list {
   @include list-reset;
+  display: flex;
+  justify-content: space-between;
 }
 
 .main-nav__link {
+  @include extra-font;
   text-decoration: none;
-}
-
-.base-class {
-  color: black;
+  color: #ffffff;
+  display: block;
+  //padding: 5px 20px 6px;
 }

@@ -1,5 +1,25 @@
+.download {
+  background-image: linear-gradient(to right, #fd712c 0%, #f21780 100%);
+}
+
+.download__inner {
+  @include fixed-container;
+}
+
+.download__title {
+  @include accent-font;
+
+  font-size: $font-L;
+  line-height: 30px;
+  font-weight: 400;
+  color: #ffffff;
+  text-align: center;
+}
+
 .download__stores {
   @include list-reset;
+
+  display: flex;
 }
 
 .download__store {

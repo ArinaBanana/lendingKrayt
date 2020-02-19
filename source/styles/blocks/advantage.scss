@@ -1,11 +1,29 @@
+.advantage {
+  padding-top: 120px;
+  padding-bottom: 118px;
+}
+
 .advantage__list {
   @include list-reset;
+  @include fixed-container;
+
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.advantage__item {
+  width: 30%;
 }
 
 .advantage__title {
   @include none-indentation;
+  @include accent-font;
+
+  font-size: $font-M;
+  font-weight: 500;
 }
 
 .advantage__description {
   @include none-indentation;
+  @include extra-font;
 }

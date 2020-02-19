@@ -9,38 +9,46 @@
   </head>
   <body>
     <header class="main-header">
-      <a href="#" class="logo">
-        <img class="logo__img" src="img/Logo.svg" alt="Logo" width="48" height="40">
-        <span class="logo__text">Giant</span>
-      </a>
-      <nav class="main-nav">
-        <ul class="main-nav__list">
-          <li class="main-nav__list-item">
-            <a href="#" class="main-nav__link">Home</a>
-          </li>
-          <li class="main-nav__list-item">
-            <a href="#" class="main-nav__link">Features</a>
-          </li>
-          <li class="main-nav__list-item">
-            <a href="#" class="main-nav__link">Pricing</a>
-          </li>
-          <li class="main-nav__list-item">
-            <a href="#" class="main-nav__link">Download Now</a>
-          </li>
-        </ul>
-      </nav>
+      <div class="main-header__inner">
+        <a href="#" class="logo">
+          <img class="logo__img" src="img/Logo.svg" alt="Logo" width="48" height="40">
+          <span class="logo__text">Giant</span>
+        </a>
+        <nav class="main-nav">
+          <ul class="main-nav__list">
+            <li class="main-nav__list-item">
+              <a href="#" class="main-nav__link">Home</a>
+            </li>
+            <li class="main-nav__list-item">
+              <a href="#" class="main-nav__link">Features</a>
+            </li>
+            <li class="main-nav__list-item">
+              <a href="#" class="main-nav__link">Pricing</a>
+            </li>
+            <li class="main-nav__list-item">
+              <a href="#" class="main-nav__link button">Download Now</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
     <main>
       <section class="banner">
-        <h1 class="banner__title">A Powerful & Unique App Landing Template</h1>
-        <p class="banner__content">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        <ul class="features-list">
-          <li class="features-list__item">Unlimited colors: banner with images, slider or video</li>
-          <li class="features-list__item">Fully Responsive and powered by HTML5 and CSS3</li>
-          <li class="features-list__item">Fully Responsive and powered by HTML5 and CSS3</li>
-        </ul>
-        <a href="#" class="button banner__btn">Start Exploring Us</a>
+        <div class="banner__inner">
+          <h1 class="banner__title">A Powerful & Unique App Landing Template</h1>
+          <p class="banner__content">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <ul class="features-list banner__list">
+            <li class="features-list__item">Unlimited colors: banner with images, slider or video</li>
+            <li class="features-list__item">Fully Responsive and powered by HTML5 and CSS3</li>
+            <li class="features-list__item">Fully Responsive and powered by HTML5 and CSS3</li>
+          </ul>
+          <a href="#" class="banner__btn button">Start Exploring Us</a>
+
+          <div class="banner__picture">
+            <img class="banner__img" src="img/iphones.png" alt="iphones" width="964" height="628">
+          </div>
+        </div>
       </section>
 
       <section class="advantage">
@@ -74,37 +82,43 @@
       </section>
 
       <section class="preview">
-        <div class="preview__image"></div>
-        <div class="preview__about">
-          <div class="preview__title">We don’t leave you stranded</div>
-          <p class="description">
-            Everyone’s reasons for learning user interface design are different.
-            If you’re already a developer, or a PM, or a UX designer, why develop this totally separate skill? If you’re already a developer, or a PM, or a UX designer.
-          </p>
-          <ul class="features-list">
-            <li class="features-list__item">Unlimited colors: banner with images, slider or video</li>
-            <li class="features-list__item">Fully Responsive and powered by HTML5 and CSS3</li>
-            <li class="features-list__item">Fully Responsive and powered by HTML5 and CSS3</li>
-          </ul>
+        <div class="preview__inner">
+          <div class="preview__picture">
+            <img class="preview__img" src="img/iphone.png" alt="iphone" width="1206" height="709">
+          </div>
+          <div class="preview__about">
+            <h2 class="preview__title">We don’t leave you stranded</h2>
+            <p class="preview__description">
+              Everyone’s reasons for learning user interface design are different.
+              If you’re already a developer, or a PM, or a UX designer, why develop this totally separate skill? If you’re already a developer, or a PM, or a UX designer.
+            </p>
+            <ul class="features-list">
+              <li class="features-list__item">Unlimited colors: banner with images, slider or video</li>
+              <li class="features-list__item">Fully Responsive and powered by HTML5 and CSS3</li>
+              <li class="features-list__item">Fully Responsive and powered by HTML5 and CSS3</li>
+            </ul>
+          </div>
         </div>
       </section>
 
       <section class="example">
-        <h2 class="example__title">Take a look at our screenshots</h2>
-        <p class="description">
-          Everyone’s reasons for learning user interface design are different.
-          If you’re already a developer, or a PM, or a UX designer, why develop this totally separate skill?
-        </p>
-        <div class="example__gallery gallery">
-          <button class="gallery__btn">Left</button>
-          <div class="gallery__pictures"></div>
-          <button class="gallery__btn">Right</button>
+        <div class="example__inner">
+          <h2 class="example__title">Take a look at our screenshots</h2>
+          <p class="example__description">
+            Everyone’s reasons for learning user interface design are different.
+            If you’re already a developer, or a PM, or a UX designer, why develop this totally separate skill?
+          </p>
+          <div class="example__gallery gallery">
+            <button class="gallery__btn">Left</button>
+            <div class="gallery__pictures"></div>
+            <button class="gallery__btn">Right</button>
+          </div>
         </div>
       </section>
 
       <section class="product-offer">
         <h2 class="product-offer__title">We've got the perfect package for you</h2>
-        <p class="description">
+        <p class="product-offer__description">
           Everyone’s reasons for learning user interface design are different.
           If you’re already a developer, or a PM, or a UX designer, why develop this totally separate skill? If you’re already a developer, or a PM, or a UX designer.
         </p>
@@ -166,12 +180,14 @@
 
       <section class="video">
         <div class="video__play-icon"></div>
-        <div class="video__picture"></div>
+        <div class="video__picture">
+          <img class="video__img" src="img/image.jpg" alt="beach" width="1920" height="400">
+        </div>
       </section>
 
       <section class="reviews">
         <h2 class="reviews__title">What our customers are saying</h2>
-        <p class="description">
+        <p class="reviews__description">
           Everyone’s reasons for learning user interface design are different.
           If you’re already a developer, or a PM, or a UX designer, why develop this totally separate skill? If you’re already a developer, or a PM, or a UX designer.
         </p>
@@ -218,24 +234,25 @@
 
     <footer class="main-footer">
       <section class="download">
-        <div class="download__title">Download Giant App Now</div>
+        <div class="download__inner">
+          <div class="download__title">Download Giant App Now</div>
+          <ul class="download__stores">
+            <li class="download__item">
+              <a href="#" class="download__link">Download</a>
+              <p class="download__store">Download from app store</p>
+            </li>
 
-        <ul class="download__stores">
-          <li class="download__item">
-            <a href="#" class="download__link">Download</a>
-            <p class="download__store">Download from app store</p>
-          </li>
+            <li class="download__item">
+              <a href="#" class="download__link">Download</a>
+              <p class="download__store">Download from play store</p>
+            </li>
 
-          <li class="download__item">
-            <a href="#" class="download__link">Download</a>
-            <p class="download__store">Download from play store</p>
-          </li>
-
-          <li class="download__item">
-            <a href="#" class="download__link">Download</a>
-            <p class="download__store">Download from microsoft store</p>
-          </li>
-        </ul>
+            <li class="download__item">
+              <a href="#" class="download__link">Download</a>
+              <p class="download__store">Download from microsoft store</p>
+            </li>
+          </ul>
+        </div>
       </section>
 
       <section class="social">

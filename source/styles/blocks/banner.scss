@@ -1,11 +1,59 @@
+.banner {
+  background-image: linear-gradient(to right, #fd712c 0%, #f21780 100%);
+  position: relative;
+}
+
+.banner__inner {
+  @include fixed-container;
+
+  color: #ffffff;
+  padding-top: 149px;
+  padding-bottom: 219px;
+}
+
 .banner__title {
   @include none-indentation;
+  @include accent-font;
+
+  font-size: $font-xxl;
+  font-weight: 600;
+  line-height: 60px;
+  width: 45%;
+  word-break: break-word;
+  margin-bottom: 23px;
 }
 
 .banner__content {
   @include none-indentation;
+  @include extra-font;
+
+  width: 45%;
+  word-break: break-word;
+  margin-bottom: 24px;
 }
 
 .banner__btn {
   text-decoration: none;
+  width: 192px;
+  text-align: center;
+}
+
+.banner__picture {
+  position: absolute;
+  top: 79px;
+  right: 0;
+  z-index: 1;
+
+  width: 50%;
+}
+
+.banner__img {
+  display: block;
+  height: 100%;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.banner__list {
+  margin-bottom: 39px;
 }

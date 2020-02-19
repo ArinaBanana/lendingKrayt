@@ -1,3 +1,26 @@
+.example {
+  background-color: #f7fafc;
+}
+
+.example__inner {
+  @include fixed-container;
+}
+
 .example__title {
   @include none-indentation;
+  @include accent-font;
+
+  font-size: $font-L;
+  line-height: 30px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.example__description {
+  @include none-indentation;
+  @include extra-font;
+
+  font-weight: 300;
+  text-align: center;
+  word-break: break-word;
 }

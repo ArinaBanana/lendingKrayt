@@ -10,7 +10,7 @@
 }
 
 @mixin fixed-container {
-  //margin: 0 auto;
+  margin: 0 auto;
 
   @media (min-width: $width-desktop) {
     width: 1140px;
@@ -23,4 +23,12 @@
   @media (min-width: $width-tablet) {
     padding: 0 30px;
   }
+}
+
+@mixin accent-font {
+  font-family: "Dosis", "Arial", sans-serif;
+}
+
+@mixin extra-font {
+  font-family: "Roboto", "Arial", sans-serif;
 }

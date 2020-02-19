@@ -2,3 +2,10 @@
   text-decoration: none;
   display: block;
 }
+
+.logo__text {
+  @include accent-font;
+  font-size: $font-L;
+  color: #ffffff;
+  font-weight: 700;
+}

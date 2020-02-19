@@ -1,3 +1,6 @@
 .features-list {
   @include list-reset;
+  @include extra-font;
+
+  font-weight: 400;
 }

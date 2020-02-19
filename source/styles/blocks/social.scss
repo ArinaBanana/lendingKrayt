@@ -1,5 +1,10 @@
+.social {
+  background-color: #222222;
+}
+
 .social__list {
   @include list-reset;
+  @include fixed-container;
 }
 
 .social__link {
@@ -8,4 +13,9 @@
 
 .social__copyright {
   @include none-indentation;
+  @include extra-font;
+
+  color: #ffffff;
+  text-align: center;
+  font-weight: 300;
 }

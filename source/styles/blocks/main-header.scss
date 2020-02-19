@@ -1,0 +1,12 @@
+.main-header {
+  background-image: linear-gradient(to right, #fd712c 0%, #f21780 100%);
+}
+
+.main-header__inner {
+  @include fixed-container;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding-top: 30px;
+}

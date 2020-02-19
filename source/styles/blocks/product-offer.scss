@@ -1,7 +1,25 @@
+.product-offer {
+  @include fixed-container;
+}
+
 .product-offer__title {
   @include none-indentation;
+  @include accent-font;
+
+  font-size: $font-L;
+  line-height: 30px;
+  font-weight: 500;
+  text-align: center;
 }
 
 .product-offer__list {
   @include list-reset;
+}
+
+.product-offer__description {
+  @include none-indentation;
+  @include extra-font;
+
+  font-weight: 300;
+  text-align: center;
 }
