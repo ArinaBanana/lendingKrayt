@@ -1,0 +1,85 @@
+.gallery {
+  display: flex;
+  position: relative;
+}
+
+.gallery__btn {
+  display: block;
+  width: 40px;
+  height: 40px;
+  background-color: #ffffff;
+  border: 1px solid #eeeeee;
+  border-radius: 50%;
+  color: #777777;
+  font-weight: 400;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+
+  &--left {
+    left: -50px;
+  }
+
+  &--right {
+    right: -50px;
+  }
+}
+
+.gallery__btn:hover {
+  border: 3px solid #d9dcde;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  background-image: linear-gradient(to right, #fd712c 0%, #f21780 100%);
+  color: #ffffff;
+}
+
+.gallery__pictures {
+  position: relative;
+  height: 500px;
+  width: 1140px;
+}
+
+.gallery__img {
+  position: absolute;
+  top: 0;
+
+  &--screen1 {
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 7;
+  }
+
+  &--screen2 {
+    left: 15%;
+    z-index: 6;
+    top: 30px;
+  }
+
+  &--screen3 {
+    left: 5%;
+    z-index: 5;
+    top: 70px;
+  }
+
+  &--screen4 {
+    left: 0;
+    z-index: 4;
+    top: 110px;
+  }
+
+  &--screen5 {
+    right: 15%;
+    z-index: 4;
+    top: 30px;
+  }
+
+  &--screen6 {
+    right: 5%;
+    z-index: 3;
+    top: 70px;
+  }
+
+  &--screen7 {
+    right: 0;
+    top: 110px;
+  }
+}
