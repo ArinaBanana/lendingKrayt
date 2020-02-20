@@ -4,3 +4,9 @@
 
   font-weight: 400;
 }
+
+.features-list__item::before {
+  content: "";
+  font-family: "FontAwesome", sans-serif;
+  margin-right: 20px;
+}
