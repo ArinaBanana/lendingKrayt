@@ -55,28 +55,64 @@
         <h2 class="visually-hidden">Our advantages</h2>
         <ul class="advantage__list">
           <li class="advantage__item">
-            <h3 class="advantage__title">Sell any product online</h3>
-            <p class="advantage__description">Over 92% of computers are infected with Adware and spyware. Such software is rarely</p>
+            <div class="advantage__icon">
+              <i class="fa fa-tags advantage__fa"></i>
+            </div>
+
+            <div class="advantage__text">
+              <h3 class="advantage__title">Sell any product online</h3>
+              <p class="advantage__description">Over 92% of computers are infected with Adware and spyware. Such software is rarely</p>
+            </div>
           </li>
           <li class="advantage__item">
-            <h3 class="advantage__title">Very easy to customize</h3>
-            <p class="advantage__description">Many of us are so used to working on a computer desktop that when it comes time to purchase</p>
+            <div class="advantage__icon">
+              <i class="fa fa-cog advantage__fa"></i>
+            </div>
+
+            <div class="advantage__text">
+              <h3 class="advantage__title">Very easy to customize</h3>
+              <p class="advantage__description">Many of us are so used to working on a computer desktop that when it comes time to purchase</p>
+            </div>
           </li>
           <li class="advantage__item">
-            <h3 class="advantage__title">Unlimited colors</h3>
-            <p class="advantage__description">Audio player software is used to play back sound recordings in one of the many </p>
+            <div class="advantage__icon">
+              <i class="fa fa-paint-brush advantage__fa"></i>
+            </div>
+
+            <div class="advantage__text">
+              <h3 class="advantage__title">Unlimited colors</h3>
+              <p class="advantage__description">Audio player software is used to play back sound recordings in one of the many </p>
+            </div>
           </li>
           <li class="advantage__item">
-            <h3 class="advantage__title">Responsive, HTML5, CSS3</h3>
-            <p class="advantage__description">Computers have become ubiquitous in almost every facet of our lives</p>
+            <div class="advantage__icon">
+              <i class="fa fa-fire-extinguisher advantage__fa"></i>
+            </div>
+
+            <div class="advantage__text">
+              <h3 class="advantage__title">Responsive, HTML5, CSS3</h3>
+              <p class="advantage__description">Computers have become ubiquitous in almost every facet of our lives</p>
+            </div>
           </li>
           <li class="advantage__item">
-            <h3 class="advantage__title">Designed to convert</h3>
-            <p class="advantage__description">If you are looking for a new way to promote your business that won’t cost you more</p>
+            <div class="advantage__icon">
+              <i class="fa fa-file advantage__fa"></i>
+            </div>
+
+            <div class="advantage__text">
+              <h3 class="advantage__title">Designed to convert</h3>
+              <p class="advantage__description">If you are looking for a new way to promote your business that won’t cost you more</p>
+            </div>
           </li>
           <li class="advantage__item">
-            <h3 class="advantage__title">With no boundaries</h3>
-            <p class="advantage__description">Now, if you are interested in being the best player, getting really good money and</p>
+            <div class="advantage__icon">
+              <i class="fa fa-life-ring advantage__fa"></i>
+            </div>
+
+            <div class="advantage__text">
+              <h3 class="advantage__title">With no boundaries</h3>
+              <p class="advantage__description">Now, if you are interested in being the best player, getting really good money and</p>
+            </div>
           </li>
         </ul>
       </section>
@@ -109,9 +145,23 @@
             If you’re already a developer, or a PM, or a UX designer, why develop this totally separate skill?
           </p>
           <div class="example__gallery gallery">
-            <button class="gallery__btn">Left</button>
-            <div class="gallery__pictures"></div>
-            <button class="gallery__btn">Right</button>
+            <button class="gallery__btn gallery__btn--left">
+              <span class="visually-hidden">Left</span>
+              <i class="fa fa-long-arrow-left"></i>
+            </button>
+            <div class="gallery__pictures">
+              <img class="gallery__img gallery__img--screen1" src="img/screenshot1.png" alt="Portfolio 1" width="424" height="564">
+              <img class="gallery__img gallery__img--screen2" src="img/screenshot2.png" alt="Portfolio 2" width="326" height="504">
+              <img class="gallery__img gallery__img--screen3" src="img/screenshot3.png" alt="Portfolio 3" width="326" height="424">
+              <img class="gallery__img gallery__img--screen4" src="img/screenshot4.png" alt="Portfolio 4" width="326" height="344">
+              <img class="gallery__img gallery__img--screen5" src="img/screenshot5.png" alt="Portfolio 5" width="326" height="504">
+              <img class="gallery__img gallery__img--screen6" src="img/screenshot6.png" alt="Portfolio 6" width="326" height="424">
+              <img class="gallery__img gallery__img--screen7" src="img/screenshot7.png" alt="Portfolio 7" width="326" height="344">
+            </div>
+            <button class="gallery__btn gallery__btn--right">
+              <span class="visually-hidden">Right</span>
+              <i class="fa fa-long-arrow-right"></i>
+            </button>
           </div>
         </div>
       </section>
@@ -179,7 +229,9 @@
       </section>
 
       <section class="video">
-        <div class="video__play-icon"></div>
+        <div class="video__icon">
+          <i class="fa fa-play video__play-icon"></i>
+        </div>
         <div class="video__picture">
           <img class="video__img" src="img/image.jpg" alt="beach" width="1920" height="400">
         </div>
