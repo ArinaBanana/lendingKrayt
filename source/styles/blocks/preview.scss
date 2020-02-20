@@ -1,7 +1,18 @@
+.preview {
+  position: relative;
+}
+
 .preview__inner {
-  //@include fixed-container;
+  @include fixed-container;
 
   display: flex;
+  border-top: 2px solid #eeeeee;
+  padding-top: 175px;
+}
+
+.preview__about {
+  width: 50%;
+  margin-left: auto;
 }
 
 .preview__title {
@@ -11,6 +22,7 @@
   font-size: $font-L;
   line-height: 30px;
   font-weight: 500;
+  margin-bottom: 23px;
 }
 
 .preview__description {
@@ -20,8 +32,19 @@
   font-weight: 300;
 }
 
+.preview__content-one {
+  display: block;
+  margin-bottom: 79px;
+}
+
+.preview__content-two {
+  display: block;
+  margin-bottom: 35px;
+}
+
 .preview__picture {
-  width: 100%;
+  width: 50%;
+  margin-right: 120px;
 }
 
 .preview__img {
