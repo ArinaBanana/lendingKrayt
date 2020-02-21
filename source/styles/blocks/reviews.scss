@@ -1,5 +1,8 @@
 .reviews {
-  @include fixed-container
+  @include fixed-container;
+
+  padding-top: 119px;
+  padding-bottom: 120px;
 }
 
 .reviews__title {
@@ -10,6 +13,12 @@
   line-height: 30px;
   font-weight: 500;
   text-align: center;
+  margin-bottom: 23px;
+}
+
+.reviews__slider {
+  display: flex;
+  position: relative;
 }
 
 .reviews__list {
@@ -18,16 +27,65 @@
   display: flex;
 }
 
+.reviews__item {
+  background-color: #f7fafc;
+  padding: 40px;
+}
+
+.reviews__item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.reviews__item:hover {
+  background-color: #ffffff;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.reviews__btn {
+  flex-shrink: 0;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+
+  &--right {
+    right: -10%;
+    transform: translateX(10%);
+  }
+
+  &--left {
+    left: -10%;
+    transform: translateX(10%);
+  }
+}
+
 .reviews__comment {
   @include none-indentation;
+  @include extra-font;
+
+  margin-bottom: 27px;
+  font-weight: 300;
+  color: #777777;
+}
+
+.reviews__user {
+  display: flex;
+  align-items: center;
 }
 
 .reviews__name {
   @include none-indentation;
+  @include accent-font;
+
+  font-size: $font-s;
+  font-weight: 400;
 }
 
 .reviews__company {
   @include none-indentation;
+  @include extra-font;
+
+  font-weight: 300;
+  color: #777777;
 }
 
 .reviews__description {
@@ -35,4 +93,13 @@
   @include extra-font;
 
   text-align: center;
+  margin-bottom: 80px;
+}
+
+.reviews__avatar {
+  margin-right: 20px;
+}
+
+.reviews__avatar-img {
+  display: block;
 }
