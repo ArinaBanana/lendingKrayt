@@ -8,7 +8,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 15px;
+  padding-top: 7px;
   padding-bottom: 40px;
 }
 
@@ -26,7 +26,7 @@
 
   font-size: $font-m;
   font-weight: 400;
-  margin-bottom: 18px;
+  margin-bottom: 17px;
 }
 
 .packages__price {
@@ -35,8 +35,8 @@
   font-weight: 500;
   font-size: $font-xl;
   line-height: 1;
-  margin-bottom: 53px;
-  padding-top: 30px;
+  margin-bottom: 49px;
+  padding-top: 22px;
 }
 
 .packages__price-wrapper {
@@ -123,8 +123,8 @@
   text-decoration: none;
   color: #aaaaaa;
   font-weight: 300;
-  margin-bottom: 14px;
-  padding-top: 30px;
+  padding-top: 20px;
+  margin-bottom: 10px;
 }
 
 .packages__btn {

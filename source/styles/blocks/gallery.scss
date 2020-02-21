@@ -9,13 +9,11 @@
   transform: translateY(-50%);
 
   &--right {
-    right: -10%;
-    transform: translateX(10%);
+    right: -8%;
   }
 
   &--left {
-    left: -10%;
-    transform: translateX(10%);
+    left: -8%;
   }
 }
 
@@ -36,13 +34,13 @@
   }
 
   &--screen2 {
-    left: 15%;
+    left: 14%;
     z-index: 6;
     top: 30px;
   }
 
   &--screen3 {
-    left: 5%;
+    left: 3%;
     z-index: 5;
     top: 70px;
   }
@@ -54,13 +52,13 @@
   }
 
   &--screen5 {
-    right: 15%;
+    right: 14%;
     z-index: 4;
     top: 30px;
   }
 
   &--screen6 {
-    right: 5%;
+    right: 3%;
     z-index: 3;
     top: 70px;
   }
