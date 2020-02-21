@@ -4,6 +4,9 @@
 
 .download__inner {
   @include fixed-container;
+
+  padding-top: 119px;
+  padding-bottom: 120px;
 }
 
 .download__title {
@@ -14,18 +17,60 @@
   font-weight: 400;
   color: #ffffff;
   text-align: center;
+  margin-bottom: 80px;
 }
 
 .download__stores {
   @include list-reset;
 
   display: flex;
+  justify-content: center;
+}
+
+.download__item {
+  background-color: #ffffff;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.07);
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  flex-basis: 35%;
+}
+
+.download__item:not(:last-child) {
+  margin-right: 30px;
 }
 
 .download__store {
   @include none-indentation;
+  @include extra-font;
+
+  font-weight: 300;
+  color: #777777;
+}
+
+.download__content {
+  padding: 19px;
 }
 
 .download__link {
+  @include accent-font;
+
+  font-size: $font-l;
+  color: #000000;
+  font-weight: 400;
   text-decoration: none;
+}
+
+.download__icon {
+  background-color: #f7fafc;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  border-radius: 3px 0 0 3px;
+  padding: 0 21px;
+}
+
+.download__icon-img {
+  display: block;
+  max-width: 100%;
 }
