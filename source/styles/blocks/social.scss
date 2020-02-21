@@ -1,14 +1,35 @@
 .social {
   background-color: #222222;
+  padding-top: 59px;
+  padding-bottom: 58px;
 }
 
 .social__list {
   @include list-reset;
   @include fixed-container;
+
+  display: flex;
+  justify-content: center;
+  margin-bottom: 31px;
+}
+
+.social__item {
+  padding: 0 15px;
 }
 
 .social__link {
   text-decoration: none;
+  display: block;
+}
+
+.social__icon {
+  font-size: $font-s;
+  color: #ffffff;
+  display: block;
+
+  &--dr {
+    color: #f31f79;
+  }
 }
 
 .social__copyright {
