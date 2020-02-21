@@ -4,14 +4,25 @@
 
 .main-nav__list {
   @include list-reset;
+
   display: flex;
   justify-content: space-between;
 }
 
+.main-nav__list-item {
+  flex-basis: 25%;
+  text-align: center;
+}
+
 .main-nav__link {
   @include extra-font;
+
   text-decoration: none;
   color: #ffffff;
   display: block;
-  //padding: 5px 20px 6px;
+  padding: 6px 0;
+
+  &--btn {
+    color: #000000;
+  }
 }
