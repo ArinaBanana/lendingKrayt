@@ -12,7 +12,7 @@
 @mixin fixed-container {
   margin: 0 auto;
 
-  @media (min-width: $width-desktop) {
+  @media (min-width: $width-content-desktop) {
     width: 1140px;
   }
 }
