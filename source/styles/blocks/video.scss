@@ -12,21 +12,30 @@
 }
 
 .video__icon {
-  width: 75px;
-  height: 75px;
+  width: 30px;
+  height: 30px;
   border-radius: 50%;
   background-image: linear-gradient(to right, #fd712c 0%, #f21780 100%);
   position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+
+  @media (min-width: $width-tablet) {
+    width: 75px;
+    height: 75px;
+  }
 }
 
 .video__play-icon {
   color: #ffffff;
-  font-size: $font-m;
-  position: relative;
+  font-size: $font-xs;
+  position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+
+  @media (min-width: $width-tablet) {
+    font-size: $font-m;
+  }
 }

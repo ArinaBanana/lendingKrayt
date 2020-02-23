@@ -10,7 +10,11 @@
 .logo__text {
   @include accent-font;
 
-  font-size: $font-L;
+  font-size: $font-xxl;
   color: #ffffff;
   font-weight: 700;
+
+  @media (min-width: $width-tablet) {
+    font-size: $font-L;
+  }
 }

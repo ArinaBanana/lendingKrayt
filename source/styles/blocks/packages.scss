@@ -1,19 +1,39 @@
 .packages {
   display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+  @media (min-width: $width-tablet) {
+    flex-direction: row;
+  }
 }
 
 .packages__item {
   background-color: #f7fafc;
-  flex-basis: 25%;
+  flex: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding-top: 7px;
   padding-bottom: 40px;
+  margin-bottom: 30px;
+
+  @media (min-width: $width-tablet) {
+    flex-basis: 40%;
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+
+  @media (min-width: $width-content-desktop) {
+    flex-basis: 20%;
+    margin: 0;
+  }
 }
 
 .packages__item:not(:last-child) {
-  margin-right: 30px;
+  @media (min-width: $width-content-desktop) {
+    margin-right: 30px;
+  }
 }
 
 .packages__item:hover {

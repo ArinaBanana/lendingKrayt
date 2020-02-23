@@ -4,67 +4,79 @@
 }
 
 .gallery__btn {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
+  display: none;
 
-  &--right {
-    right: -8%;
-  }
+  @media (min-width: 1400px) {
+    display: block;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
 
-  &--left {
-    left: -8%;
+    &--right {
+      right: -8%;
+    }
+
+    &--left {
+      left: -8%;
+    }
   }
 }
 
 .gallery__pictures {
-  position: relative;
-  height: 500px;
-  width: 1140px;
+  @media (min-width: $width-tablet) {
+    position: relative;
+    height: 500px;
+    width: 1140px;
+  }
 }
 
 .gallery__img {
-  position: absolute;
-  top: 0;
+  max-width: 100%;
+  display: block;
 
-  &--screen1 {
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 7;
-  }
+  @media (min-width: $width-tablet) {
+    position: absolute;
+    top: 0;
 
-  &--screen2 {
-    left: 14%;
-    z-index: 6;
-    top: 30px;
-  }
+    &--screen1 {
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 7;
+    }
 
-  &--screen3 {
-    left: 3%;
-    z-index: 5;
-    top: 70px;
-  }
+    &--screen2 {
+      left: 14%;
+      z-index: 6;
+      top: 30px;
+    }
 
-  &--screen4 {
-    left: 0;
-    z-index: 4;
-    top: 110px;
-  }
+    &--screen3 {
+      left: 3%;
+      z-index: 5;
+      top: 70px;
+    }
 
-  &--screen5 {
-    right: 14%;
-    z-index: 4;
-    top: 30px;
-  }
+    &--screen4 {
+      left: 0;
+      z-index: 4;
+      top: 110px;
+    }
 
-  &--screen6 {
-    right: 3%;
-    z-index: 3;
-    top: 70px;
-  }
+    &--screen5 {
+      right: 14%;
+      z-index: 4;
+      top: 30px;
+    }
 
-  &--screen7 {
-    right: 0;
-    top: 110px;
+    &--screen6 {
+      right: 3%;
+      z-index: 3;
+      top: 70px;
+    }
+
+    &--screen7 {
+      right: 0;
+      top: 110px;
+    }
   }
 }

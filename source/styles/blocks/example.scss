@@ -4,9 +4,15 @@
 
 .example__inner {
   @include fixed-container;
+  @include fixed-indent;
 
-  padding-top: 72px;
-  padding-bottom: 120px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+
+  @media (min-width: $width-tablet) {
+    padding-top: 72px;
+    padding-bottom: 120px;
+  }
 }
 
 .example__title {
@@ -25,10 +31,13 @@
   @include extra-font;
 
   font-weight: 300;
-  text-align: center;
   word-break: break-word;
   margin-bottom: 72px;
-  width: 60%;
   margin-right: auto;
   margin-left: auto;
+
+  @media (min-width: $width-tablet) {
+    width: 60%;
+    text-align: center;
+  }
 }

@@ -4,9 +4,15 @@
 
 .download__inner {
   @include fixed-container;
+  @include fixed-indent;
 
-  padding-top: 119px;
-  padding-bottom: 120px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+
+  @media (min-width: $width-tablet) {
+    padding-top: 119px;
+    padding-bottom: 120px;
+  }
 }
 
 .download__title {
@@ -25,6 +31,12 @@
 
   display: flex;
   justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+  @media (min-width: $width-tablet) {
+    flex-direction: row;
+  }
 }
 
 .download__item {
@@ -33,11 +45,22 @@
   border-radius: 3px;
   display: flex;
   align-items: center;
-  flex-basis: 35%;
+  margin-bottom: 40px;
+
+  @media (min-width: $width-tablet) {
+    flex-basis: 80%;
+  }
+
+  @media (min-width: $width-content-desktop) {
+    flex-basis: 31%;
+    margin-bottom: 0;
+  }
 }
 
 .download__item:not(:last-child) {
-  margin-right: 30px;
+  @media (min-width: $width-content-desktop) {
+    margin-right: 30px;
+  }
 }
 
 .download__store {

@@ -4,9 +4,16 @@
 
 .main-header__inner {
   @include fixed-container;
+  @include fixed-indent;
 
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 30px;
+  flex-direction: column;
+  padding-top: 40px;
+
+  @media (min-width: $width-tablet) {
+    flex-direction: row;
+    padding-top: 30px;
+  }
 }

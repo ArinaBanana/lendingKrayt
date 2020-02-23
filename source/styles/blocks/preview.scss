@@ -4,15 +4,29 @@
 
 .preview__inner {
   @include fixed-container;
+  @include fixed-indent;
 
   display: flex;
   border-top: 2px solid #eeeeee;
-  padding-top: 175px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+
+  @media (min-width: $width-tablet) {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  @media (min-width: $width-content-desktop) {
+    padding-top: 175px;
+    padding-bottom: 0;
+  }
 }
 
 .preview__about {
-  width: 60%;
-  margin-left: auto;
+  @media (min-width: $width-tablet) {
+    width: 60%;
+    margin-left: auto;
+  }
 }
 
 .preview__title {
@@ -34,7 +48,11 @@
 
 .preview__content-one {
   display: block;
-  margin-bottom: 72px;
+  margin-bottom: 30px;
+
+  @media (min-width: $width-content-desktop) {
+    margin-bottom: 72px;
+  }
 }
 
 .preview__content-two {
@@ -43,10 +61,23 @@
 }
 
 .preview__picture {
-  width: 40%;
-  margin-right: 128px;
+  display: none;
+
+  @media (min-width: $width-tablet) {
+    display: block;
+  }
+
+  @media (min-width: $width-content-desktop) {
+    width: 40%;
+    margin-right: 128px;
+  }
 }
 
 .preview__img {
   height: 100%;
+  max-width: 100%;
+
+  @media (min-width: $width-content-desktop) {
+    max-width: initial;
+  }
 }

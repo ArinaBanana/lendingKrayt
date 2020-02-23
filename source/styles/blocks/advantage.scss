@@ -1,22 +1,42 @@
 .advantage {
   @include fixed-container;
+  @include fixed-indent;
 
-  padding-top: 120px;
-  padding-bottom: 90px;
+  padding-top: 40px;
+  padding-bottom: 18px;
+
+  @media (min-width: $width-tablet) {
+    padding-top: 120px;
+    padding-bottom: 90px;
+  }
 }
 
 .advantage__list {
   @include list-reset;
 
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   flex-wrap: wrap;
+
+  @media (min-width: $width-tablet) {
+    flex-direction: row;
+  }
 }
 
 .advantage__item {
-  width: 32%;
   margin-bottom: 22px;
   display: flex;
+
+  @media (min-width: $width-tablet) {
+    flex-basis: 50%;
+    margin-bottom: 40px;
+  }
+
+  @media (min-width: $width-content-desktop) {
+    margin-bottom: 22px;
+    flex-basis: 32%;
+  }
 }
 
 .advantage__text {
