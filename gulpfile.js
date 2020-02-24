@@ -10,6 +10,10 @@ var gulpStylelint = require("gulp-stylelint");
 var inject = require("gulp-inject");
 var server = require("browser-sync").create();
 
+var postcss = require("gulp-postcss");
+var autoprefixer = require("autoprefixer");
+var csso = require("gulp-csso");
+
 sass.compiler = require("node-sass");
 
 var stylelint = function () {
@@ -56,6 +60,7 @@ var processDependenciesCss = function () {
         "node_modules/normalize.css/normalize.css",
         "node_modules/font-awesome/css/font-awesome.css"
     ])
+        .pipe(csso())
         .pipe(rename({suffix: ".min"}))
         .pipe(gulp.dest("build/css"));
 };
@@ -70,7 +75,11 @@ var processDependencies = gulp.parallel(processDependenciesCss, processDependenc
 var processSass = function () {
     return gulp.src("source/styles/main.scss")
         .pipe(sass().on("error", sass.logError))
-        .pipe(rename("style.css"))
+        .pipe(postcss([
+            autoprefixer()
+        ]))
+        .pipe(csso())
+        .pipe(rename("style.min.css"))
         .pipe(gulp.dest("build/css"));
 };
 
