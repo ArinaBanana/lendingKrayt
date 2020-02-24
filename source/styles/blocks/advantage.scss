@@ -26,7 +26,6 @@
 
 .advantage__item {
   margin-bottom: 22px;
-  display: flex;
 
   @media (min-width: $width-tablet) {
     flex-basis: 50%;
@@ -39,10 +38,6 @@
   }
 }
 
-.advantage__text {
-  padding-left: 25px;
-}
-
 .advantage__title {
   @include none-indentation;
   @include accent-font;
@@ -50,6 +45,11 @@
   font-size: $font-M;
   font-weight: 500;
   margin-bottom: 20px;
+  display: inline;
+
+  @media (min-width: $width-tablet) {
+    display: block;
+  }
 }
 
 .advantage__description {
@@ -62,16 +62,24 @@
 .advantage__icon {
   width: 75px;
   height: 75px;
-  border: 1px solid #eeeeee;
-  border-radius: 50%;
-  flex-shrink: 0;
+  margin-right: 10px;
+  display: inline;
+
+  @media (min-width: $width-tablet) {
+    float: left;
+    display: block;
+    height: 100%;
+    margin-right: 25px;
+  }
 }
 
 .advantage__fa {
-  position: relative;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   color: #f31f79;
   font-size: 24px;
+
+  @media (min-width: $width-tablet) {
+    padding: 26px;
+    border: 1px solid #eeeeee;
+    border-radius: 50%;
+  }
 }
