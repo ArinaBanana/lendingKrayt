@@ -1,18 +1,23 @@
 .logo {
   text-decoration: none;
-  display: block;
+  display: flex;
+  align-items: baseline;
 }
 
 .logo__img {
-  display: inline-block;
+  display: block;
 }
 
 .logo__text {
   @include accent-font;
 
   font-size: $font-xxl;
+  line-height: 1;
   color: #ffffff;
   font-weight: 700;
+  margin-left: 3px;
+  position: relative;
+  bottom: 4px;
 
   @media (min-width: $width-tablet) {
     font-size: $font-L;

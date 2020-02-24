@@ -37,6 +37,10 @@
   @media (min-width: $width-tablet) {
     flex-direction: row;
   }
+
+  @media (min-width: $width-content-desktop) {
+    justify-content: initial;
+  }
 }
 
 .download__item {
@@ -48,11 +52,11 @@
   margin-bottom: 40px;
 
   @media (min-width: $width-tablet) {
-    flex-basis: 80%;
+    width: 80%;
   }
 
   @media (min-width: $width-content-desktop) {
-    flex-basis: 31%;
+    width: 360px;
     margin-bottom: 0;
   }
 }
@@ -96,4 +100,6 @@
 .download__icon-img {
   display: block;
   max-width: 100%;
+  position: relative;
+  top: 6px;
 }

@@ -7,7 +7,7 @@
 
   @media (min-width: $width-tablet) {
     padding-top: 109px;
-    padding-bottom: 120px;
+    padding-bottom: 116px;
   }
 }
 
@@ -46,12 +46,12 @@
 
 .reviews__item {
   background-color: #f7fafc;
-  padding: 40px;
+  padding: 45px 40px;
   margin-bottom: 40px;
 
   @media (min-width: $width-content-desktop) {
     margin-bottom: 0;
-    flex-basis: 31%;
+    width: 360px;
   }
 }
 
@@ -90,7 +90,7 @@
   @include none-indentation;
   @include extra-font;
 
-  margin-bottom: 27px;
+  margin-bottom: 23px;
   font-weight: 300;
   color: #777777;
 }
@@ -105,7 +105,7 @@
   @include accent-font;
 
   font-size: $font-s;
-  font-weight: 400;
+  font-weight: 700;
 }
 
 .reviews__company {
@@ -124,6 +124,7 @@
   word-break: break-word;
   margin-left: auto;
   margin-right: auto;
+  font-weight: 300;
 
   @media (min-width: $width-tablet) {
     width: 80%;

@@ -1,6 +1,4 @@
 .main-nav {
-  @include fixed-indent;
-
   width: 100%;
 
   @media (min-width: $width-tablet) {
@@ -8,7 +6,7 @@
   }
 
   @media (min-width: $width-content-desktop) {
-    width: 42%;
+    width: 41%;
   }
 }
 
@@ -16,22 +14,22 @@
   @include list-reset;
 
   display: flex;
-  justify-content: space-between;
   flex-direction: column;
   margin-bottom: 10px;
 
   @media (min-width: $width-tablet) {
     flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 5px;
   }
 }
 
 .main-nav__list-item {
-  flex-basis: 100%;
   text-align: center;
+}
 
-  @media (min-width: $width-tablet) {
-    flex-basis: 25%;
-  }
+.main-nav__list-item:not(:last-child) {
+  margin: 0 15px;
 }
 
 .main-nav__link {
@@ -42,13 +40,15 @@
   line-height: 1;
   color: #ffffff;
   display: block;
-  padding: 6px 0;
   margin: 20px 0;
+  padding: 6px 0 10px;
+  width: 100%;
 
   &--btn {
     color: #000000;
-    width: 100%;
     box-shadow: 0 0 0 5px rgba(0, 0, 0, 0.1);
+    font-weight: 500;
+    padding: 6px 0;
 
     @media (min-width: $width-tablet) {
       width: 153px;

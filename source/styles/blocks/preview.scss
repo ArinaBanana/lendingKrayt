@@ -70,6 +70,9 @@
   @media (min-width: $width-content-desktop) {
     width: 40%;
     margin-right: 128px;
+    position: relative;
+    bottom: 59px;
+    right: 100px;
   }
 }
 
