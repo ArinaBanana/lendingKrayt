@@ -5,12 +5,16 @@
 
   @media (min-width: $width-tablet) {
     flex-direction: row;
+    justify-content: center;
+  }
+
+  @media (min-width: $width-content-desktop) {
+    justify-content: space-around;
   }
 }
 
 .packages__item {
   background-color: #f7fafc;
-  flex: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -78,17 +82,15 @@
   width: 0;
   height: 0;
   border-bottom: 40px solid #f7fafc;
-  border-right: 130px solid transparent;
+  border-right: 145px solid transparent;
   left: 0;
   bottom: 0;
 
   @media (min-width: $width-tablet) {
-    border-bottom: 40px solid #f7fafc;
     border-right: 160px solid transparent;
   }
 
   @media (min-width: $width-content-desktop) {
-    border-bottom: 40px solid #f7fafc;
     border-right: 130px solid transparent;
   }
 }
@@ -99,49 +101,43 @@
   width: 0;
   height: 0;
   border-bottom: 40px solid #f7fafc;
-  border-left: 130px solid transparent;
+  border-left: 145px solid transparent;
   right: 0;
   bottom: 0;
 
   @media (min-width: $width-tablet) {
-    border-bottom: 40px solid #f7fafc;
     border-left: 160px solid transparent;
   }
 
   @media (min-width: $width-content-desktop) {
-    border-bottom: 40px solid #f7fafc;
     border-left: 130px solid transparent;
   }
 }
 
 .packages__item:hover .packages__price-wrapper::before {
   border-bottom: 40px solid #ffffff;
-  border-right: 130px solid transparent;
+  border-right: 145px solid transparent;
   left: 0;
 
   @media (min-width: $width-tablet) {
-    border-bottom: 40px solid #ffffff;
     border-right: 160px solid transparent;
   }
 
   @media (min-width: $width-content-desktop) {
-    border-bottom: 40px solid #ffffff;
     border-right: 130px solid transparent;
   }
 }
 
 .packages__item:hover .packages__price-wrapper::after {
   border-bottom: 40px solid #ffffff;
-  border-left: 130px solid transparent;
+  border-left: 145px solid transparent;
   right: 0;
 
   @media (min-width: $width-tablet) {
-    border-bottom: 40px solid #ffffff;
     border-left: 160px solid transparent;
   }
 
   @media (min-width: $width-content-desktop) {
-    border-bottom: 40px solid #ffffff;
     border-left: 130px solid transparent;
   }
 }
